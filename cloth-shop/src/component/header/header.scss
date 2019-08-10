@@ -1,0 +1,38 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+  
+    .logo-container {
+      height: 100%;
+      width: 70px;
+      padding: 15px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .option {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  a:hover{
+      transform: rotate3d(2, -1, -1,1turn);
+    transition: transform 1s
+  }

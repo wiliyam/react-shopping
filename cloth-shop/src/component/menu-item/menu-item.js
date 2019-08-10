@@ -5,7 +5,6 @@ import {withRouter} from 'react-router-dom'
 
 const menuItem = (props) => {
 
-    console.log(props)
     return ( 
     <div style={{backgroundImage:`url(${props.imgUrl})`}} className={`${props.size} menu-item`} onClick={()=>props.history.push(props.linkUrl)}>
         <div className='background-image'  style={{backgroundImage:`url(${props.imgUrl})`}}>
