@@ -3,7 +3,7 @@ import {addIyemToCart} from './cart.utils'
 
 const INITIAL_STATE = {
   hidden: true,
-  cartItem: []
+  cartItems: []
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -16,7 +16,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
     case cartActiontype.ADD_ITEM:
       return {
         ...state,
-        cartItem:addIyemToCart(state.cartItem,action.payload)
+        cartItems:addIyemToCart(state.cartItems,action.payload)
       };
     default:
       return state;
